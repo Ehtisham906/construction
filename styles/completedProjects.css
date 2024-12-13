@@ -130,7 +130,9 @@ nav .nav-items ul li {
 .container {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px; 
 }
 
 .box1 {
@@ -423,3 +425,133 @@ nav .nav-items ul li {
     
     position: fixed;
 }
+.completedProjectsSection{
+    padding: 90px 90px;
+}
+.completedProjectsSection h1{
+    text-align: center;
+    color: #F26D23;
+    font-size: 40px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ongoingProjectsSection */
+.ongoingProjectsSection{
+    padding: 90px 90px;
+}
+.ongoingProjectsSection h1{
+    text-align: center;
+    color: #F26D23;
+    font-size: 40px;
+}
+
+
+
+
+
+.footer {
+    background-color: #F26D23;
+    /* Primary color */
+    color: white;
+    padding: 20px;
+    font-family: "futura", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.footer-logo {
+    width: 130px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-text,
+.footer-link,
+.footer-item {
+    font-size: 14px;
+    color: white;
+    /* Slate color */
+    margin: 5px 0;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-link:hover {
+    opacity: 0.9;
+}
+
+.footer-title {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-button {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.footer-button:hover {
+    background-color: white;
+    color: #1e40af;
+    /* Secondary color */
+}
+
+.footer-languages {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    opacity: 0.85;
+}
+
+.footer-divider {
+    border: 1px solid white;
+    margin: 20px 0;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}   
