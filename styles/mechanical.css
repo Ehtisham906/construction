@@ -127,59 +127,63 @@ nav .nav-items ul li {
 }
 
 
-/* heroSection */
-
-.heroSection div {
+/* hero section */
+.heroSection {
+    position: relative;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
 }
 
-.heroSection div div {
-    width: 45%;
+
+.heroContent {
+    position: absolute;
+    top: 0;
+    color: white;
+
+    font-size: 38px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.heroSection div div h1 {
-    font-size: 40px;
-}
-
-.heroSection div div h1 span {
+.heroContent h1 span {
     color: #F26D23;
-    font-size: 40px;
 }
 
 
-
-/* middle section */
-.middleSection {
-    margin-top: 80px;
-}
-
-.middleSection div div h1 {
-    font-size: 40px;
-    text-align: center;
+/* cardssection */
+.cardsSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0px;
 }
 
 .cards {
     display: flex;
-    gap: 20px;
-    margin-top: 40px;
     justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 
-.card {
+.card1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     width: 300px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    height: 300px;
+    border: 1px solid #F26D23;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: ease-in-out 0.3s;
-
 }
 
 .card:hover {
@@ -187,64 +191,23 @@ nav .nav-items ul li {
 }
 
 .card img {
-    width: 150px;
+    width: 100px;
 }
 
-.card h2 {
+.card h1 {
     font-size: 26px;
     color: #F26D23;
 }
 
-.secondContainer {
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.secondContainer div {
-    width: 80%;
-    text-align: center;
-}
-
-.secondContainer div h1 {
-    font-size: 40px;
-}
-
-.cards2 {
-    display: flex;
-    gap: 20px;
-    margin-top: 40px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 40% !important;
-    height: 100px !important;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: ease-in-out 0.3s;
+.cardContents h1 span {
+    font-size: 32px;
+    color: #F26D23;
 
 }
 
-.cards2>:nth-child(3),
-.cards2>:nth-child(4),
-.cards2>:nth-child(7) {
-    color: white;
-    background-color: #F26D23;
-}
 
 
-
+/* fotter */
 .footer {
     background-color: #F26D23;
     /* Primary color */
