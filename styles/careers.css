@@ -13,10 +13,6 @@
     src: url(../fonts/helvetica-w01-light.woff2);
 }
 
-* {
-    font-family: "futura" !important;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -26,6 +22,10 @@ nav {
     font-family: 'helvetica', sans-serif;
 
 
+}
+
+* {
+    font-family: "futura", sans-serif;
 }
 
 
@@ -127,14 +127,12 @@ nav .nav-items ul li {
 }
 
 
-/* hero section */
 .heroSection {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 .heroContent {
     position: absolute;
@@ -147,67 +145,121 @@ nav .nav-items ul li {
     transform: translate(-50%, -50%);
 }
 
-.heroContent h1 span {
+.heroContent h1 {
     color: #F26D23;
 }
 
 
-/* cardssection */
-.cardsSection {
+
+
+.containerCareer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.containerCareer>div {
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px 0px;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-
-.card1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
-    width: 300px;
-    height: 300px;
+}
+
+
+/* vacaniesSection */
+.vacaniesSection {
+    margin-top: 60px;
+}
+
+.vacaniesSection>:nth-child(1) {
+    text-align: center;
+    font-size: 38px;
+    color: #F26D23;
+}
+
+.vacaniesContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.vacaniesContainer div {
     border: 1px solid #F26D23;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 25%;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.vacaniesContainer div button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #F26D23;
+    color: white;
+    border: none;
     cursor: pointer;
-    transition: ease-in-out 0.3s;
+
 }
 
-.card:hover {
-    transform: scale(1.1);
+/* lastSection */
+
+.lastSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
 }
 
-.card img {
-    width: 100px;
-}
-
-.card h1 {
-    font-size: 26px;
+.lastSectionSecondContainer form h1 {
+    font-size: 38px;
     color: #F26D23;
 }
 
-.cardContents h1 span {
-    font-size: 32px;
-    color: #F26D23;
 
+.lastSectionSecondContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 30px;
+}
+
+.lastSectionSecondContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lastSectionSecondContainer form label {
+    display: flex;
+    gap: 20px;
+    /* flex-direction: column; */
+    font-size: 20px;
+}
+
+.lastSectionSecondContainer form input {
+    
+    padding: 10px 10px;
+}
+
+.lastSectionSecondContainer form button {
+    width: 100%;
+    padding: 10px 10px;
 }
 
 
 
-/* fotter */
+
+
+/* footer */
 .footer {
     background-color: #F26D23;
     /* Primary color */

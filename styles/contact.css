@@ -13,10 +13,6 @@
     src: url(../fonts/helvetica-w01-light.woff2);
 }
 
-* {
-    font-family: "futura" !important;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -26,6 +22,10 @@ nav {
     font-family: 'helvetica', sans-serif;
 
 
+}
+
+* {
+    font-family: "futura", sans-serif;
 }
 
 
@@ -126,88 +126,60 @@ nav .nav-items ul li {
     gap: 5px;
 }
 
+/* middleSection */
 
-/* hero section */
-.heroSection {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.middleSection {
+
+    margin: 80px 40px;
 }
 
+.middleSection div {
+    display: flex;
+    justify-content: space-between;
+}
 
-.heroContent {
-    position: absolute;
-    top: 0;
+.middleSection div form {
+    width: 40%;
+}
+
+.middleSection div form div {
+    display: flex;
+
+    gap: 10px;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.middleSection div form div input {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+.middleSection div form button {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #F26D23;
     color: white;
-
-    font-size: 38px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.heroContent h1 span {
-    color: #F26D23;
-}
-
-
-/* cardssection */
-.cardsSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 100px 0px;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-
-.card1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 300px;
-    height: 300px;
-    border: 1px solid #F26D23;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
     cursor: pointer;
-    transition: ease-in-out 0.3s;
+
 }
 
-.card:hover {
-    transform: scale(1.1);
-}
-
-.card img {
-    width: 100px;
-}
-
-.card h1 {
-    font-size: 26px;
+.middleSection h1 {
+    text-align: center;
+    margin-bottom: 50px;
     color: #F26D23;
-}
-
-.cardContents h1 span {
-    font-size: 32px;
-    color: #F26D23;
-
+    font-weight: 600;
+    font-size: 50px;
 }
 
 
 
-/* fotter */
+/* footer */
 .footer {
     background-color: #F26D23;
     /* Primary color */
