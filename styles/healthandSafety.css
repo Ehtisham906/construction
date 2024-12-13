@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "futura";
+    src: url(../fonts/futura-lt-w01-book.woff2);
+}
+
+@font-face {
+    font-family: "helvetica";
+    src: url(../fonts/helvetica-w01-light.woff2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 90px;
+    background-color: #f5f5f5;
+    font-family: 'helvetica', sans-serif;
+
+}
+
+
+nav .nav-items ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav .nav-items ul li {
+    cursor: pointer;
+}
+
+.nav-toggler {
+    display: none;
+}
+
+.nav-items ul li ul {
+    /* display: flex; */
+    flex-direction: column;
+    background-color: white;
+    box-shadow: black;
+    padding: 10px 0px;
+    width: 200px;
+    gap: 0px !important;
+    display: none;
+}
+
+.nav-items ul li ul li {
+    padding: 10px 5px;
+    width: 100%;
+
+}
+
+.nav-items ul .dropDown {
+    position: relative;
+}
+
+.nav-items ul .dropDown ul {
+    position: absolute;
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-items ul .dropDown:hover ul {
+    display: flex;
+
+}
+
+.nav-items ul .dropDown ul li:hover {
+    background-color: #F26D23;
+    width: auto;
+    padding: 10px 5px !important;
+}
+
+
+@media screen and (max-width: 990px) {
+
+    nav {
+        align-items: normal;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav {
+        flex-direction: column;
+        position: relative;
+    }
+
+    nav .nav-items {
+        display: none;
+    }
+
+    .active {
+        display: block !important;
+    }
+
+    nav .nav-items ul {
+        display: flex;
+        margin-top: 102px;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .nav-toggler {
+        display: block;
+
+    }
+}
+
+.nav-item{
+    display: flex;
+    gap: 5px;
+}
+
+*{
+    font-family: "futura", sans-serif;
+}
+/* herosection */
+
+.heroSection {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vedioContainer{
+    /* opacity: 0.1; */
+}
+.heroContent {
+    position: absolute;
+    top: 0;
+    color: white;
+    
+    font-size: 38px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heroContent h1 span {
+    color: #F26D23;
+}

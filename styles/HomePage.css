@@ -30,9 +30,52 @@ nav .nav-items ul {
     gap: 40px;
 }
 
+nav .nav-items ul li {
+    cursor: pointer;
+}
+
 .nav-toggler {
     display: none;
 }
+
+.nav-items ul li ul {
+    /* display: flex; */
+    flex-direction: column;
+    background-color: white;
+    box-shadow: black;
+    padding: 10px 0px;
+    width: 200px;
+    gap: 0px !important;
+    display: none;
+}
+
+.nav-items ul li ul li {
+    padding: 10px 5px;
+    width: 100%;
+
+}
+
+.nav-items ul .dropDown {
+    position: relative;
+}
+
+.nav-items ul .dropDown ul {
+    position: absolute;
+    
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-items ul .dropDown:hover ul {
+    display: flex;
+
+}
+
+.nav-items ul .dropDown ul li:hover {
+    background-color: #F26D23;
+    width: auto;
+    padding: 10px 5px !important;
+}
+
 
 @media screen and (max-width: 990px) {
 
