@@ -1,6 +1,7 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: "futura", sans-serif;
 }
 
 @font-face {
@@ -122,104 +123,42 @@ nav .nav-items ul li {
     gap: 5px;
 }
 
-* {
-    font-family: "futura", sans-serif;
-}
+/* sustainabilityHeroSection */
 
-/* herosection */
-
-.heroSection {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.vedioContainer {
-    /* opacity: 0.1; */
-}
-
-.heroContent {
-    position: absolute;
-    top: 0;
-    color: white;
-
-    font-size: 38px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.heroContent h1 span {
-    color: #F26D23;
-}
-
-
-
-
-/* safety section */
-.safteySection {
-    margin-top: 60px;
-}
-
-.safteyContainer>div {
-    width: 45%;
-}
-
-.safteyContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-.safteyContainer>:nth-child(1) {
-
-    background-image: url(../images/safteyPAge.svg);
+.sustainabilityHeroSection {
+    height: 70dvh;
+    background-image: url('../images/sustainHeroIMg.jpg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 400px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
 
-.ourCommitmentSection {
-    margin-top: 60px;
-}
-
-.ourCommitmentContent h1 {
-    font-size: 38px;
-}
-
-.ourCommitmentContent h1 span {
+.sustainabilityHeroContainer h1 {
+    margin-right: 20px;
+    margin-bottom: 90px;
+    font-size: 42px;
     color: #F26D23;
 }
 
-
-.safetyListContainer>:nth-child(1) {
-    width: 45%;
-    margin-left: auto;
-}
-
-.safetyListContainer>:nth-child(2) {
-    width: 45%;
-}
-
-.safetyListContainer {
+.sustainabilityMiddleContainer {
     display: flex;
-    margin-top: 30px;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
 }
 
-
-.ourCommitmentContent {
-    text-align: center;
+.sustainabilityMiddleContainer>div {
+    width: 45%;
 }
 
+.sustainabilityMiddleContainer>:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
-
-/* footer */
 .footer {
     background-color: #F26D23;
     /* Primary color */

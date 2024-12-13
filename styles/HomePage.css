@@ -21,13 +21,14 @@ nav {
     background-color: #f5f5f5;
     font-family: 'helvetica', sans-serif;
 
+
 }
 
 
 nav .nav-items ul {
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: 30px;
 }
 
 nav .nav-items ul li {
@@ -42,7 +43,6 @@ nav .nav-items ul li {
     /* display: flex; */
     flex-direction: column;
     background-color: white;
-    box-shadow: black;
     padding: 10px 0px;
     width: 200px;
     gap: 0px !important;
@@ -57,11 +57,12 @@ nav .nav-items ul li {
 
 .nav-items ul .dropDown {
     position: relative;
+    z-index: 120;
 }
 
 .nav-items ul .dropDown ul {
     position: absolute;
-    
+
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -116,6 +117,10 @@ nav .nav-items ul li {
     }
 }
 
+.nav-item {
+    display: flex;
+    gap: 5px;
+}
 
 /* Hero Section CSS */
 
@@ -714,21 +719,6 @@ nav .nav-items ul li {
         font-size: 0.9rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-.fazool {
-    margin-top: 90vh;
-}
-
-
 
 
 .footer {
